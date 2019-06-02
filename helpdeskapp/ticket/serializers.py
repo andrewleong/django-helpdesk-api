@@ -28,6 +28,7 @@ class TicketSerializer(serializers.ModelSerializer):
             'title',
             'content',
             'category',
+            'status',
             'ticket_id',
             'user',
             'created_date',
@@ -38,6 +39,7 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Category
         fields = (
+            'id',
             'name',
             'slug'
         )

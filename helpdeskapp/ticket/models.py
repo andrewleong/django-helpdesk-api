@@ -15,9 +15,10 @@ class Ticket(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
+    status = models.CharField(choices=status, max_length=155, default='pending')
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    created_date = models.DateTimeField(auto_now=True)
-    updated_date = models.DateTimeField(auto_now_add=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    updated_date = models.DateTimeField(auto_now=True)
 
     # Magic method to return format
     def __str__(self):

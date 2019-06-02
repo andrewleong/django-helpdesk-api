@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import routers, serializers, viewsets
-from helpdeskapp.serializers import UserSerializer, TicketSerializer, CategorySerializer
+from ticket.serializers import UserSerializer, TicketSerializer, CategorySerializer
 from django.contrib.auth.models import User
 from .models import Ticket, Category
 
