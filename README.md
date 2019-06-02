@@ -8,5 +8,7 @@ To create endpoint apis with CRUD methods for user to submit complains/issues as
 
 # Endpoints available
 /api/users/
+
 /api/ticket/
+
 /api/category/
