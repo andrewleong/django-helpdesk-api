@@ -1,0 +1,10 @@
+Django==2.2.1
+djangorestframework==3.9.4
+GDAL==2.4.1
+nose==1.3.7
+numpy==1.16.4
+protobuf==3.7.1
+psycopg2==2.8.2
+pytz==2019.1
+six==1.12.0
+sqlparse==0.3.0
